@@ -2,6 +2,7 @@ import React from 'react';
 
 class TweetFooter extends React.Component {
     render(){
+
         const favouriteCount = this.props.favouriteCount
         const retweetCount = this.props.retweetCount
         return (

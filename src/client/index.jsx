@@ -6,8 +6,15 @@ import User from 'user'
 import Body from 'body'
 import TweetFooter from 'tweet_footer'
 
+
 class App extends React.Component {
   render() {
+    // Styles
+    const tweetdiv = {
+        borderBottom: "solid black",
+        marginBottom: "10px"
+    }
+
     console.log(tweets.tweets[1])
 
     let  allTweets = tweets.tweets.map((el) => {
@@ -18,7 +25,7 @@ class App extends React.Component {
         const retweetCount = el.retweet_count
 
         return (
-            <div>
+            <div style={tweetdiv} >
                 <User user={user}/>
                 <Body body={body} entities={entities}/>
                 <TweetFooter favouriteCount={favouriteCount} retweetCount={retweetCount} />
