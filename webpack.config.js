@@ -40,5 +40,6 @@ module.exports = {
     colors: true,
     entrypoints: false,
     modules: false
-  }
+  },
+  watch: true
 };
